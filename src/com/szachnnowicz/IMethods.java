@@ -1,13 +1,17 @@
 package com.szachnnowicz;
 
 public interface IMethods<T> {
-    void add(T item);
+    void addAtEnd(T item);
 
-    void delete(int index);
+    void addAtBegin(T item);
 
-    void delete(T item);
+    void addAtIndex(T item, int index);
 
-    T search(int index);
+    void deleteAtEnd();
+
+    void deleteAtBegin();
+
+    void deleteAtIndex(int index);
 
     int search(T Item);
 
